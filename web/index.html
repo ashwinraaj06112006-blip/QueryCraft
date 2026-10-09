@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QueryCraft Workbench</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">PHASE 2 COMPILER WORKBENCH</p>
+      <h1>QueryCraft</h1>
+      <p>Enter a controlled English query and inspect every compiler stage before running the generated SQL on a local SQLite database.</p>
+    </section>
+
+    <section class="query-panel">
+      <label for="query">Controlled English query</label>
+      <textarea id="query" rows="3">Show students whose CGPA is greater than 8</textarea>
+      <div class="actions">
+        <button id="compile">Compile and execute</button>
+        <button id="example" class="secondary">Load example</button>
+      </div>
+      <p class="hint">Examples: Show all students | Count students | Show top 5 students by CGPA</p>
+    </section>
+
+    <section id="status" class="status hidden" aria-live="polite"></section>
+
+    <section id="workbench" class="hidden">
+      <div class="grid">
+        <article><h2>1. Token stream</h2><pre id="tokens"></pre></article>
+        <article><h2>2. AST / IR</h2><pre id="ast"></pre></article>
+        <article class="wide"><h2>3. Generated SQL</h2><pre id="sql"></pre></article>
+      </div>
+      <article class="results"><h2>4. SQLite execution result</h2><div id="table"></div></article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

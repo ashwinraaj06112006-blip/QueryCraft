@@ -37,6 +37,16 @@ Show students where CGPA greater than 8 and age greater than 19
 python -m src.main "Show students whose CGPA is greater than 8"
 ```
 
+## Phase 2 web interface
+
+Run the local compiler workbench:
+
+```powershell
+python -m src.webapp
+```
+
+Then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in a browser. The interface shows the token stream, AST/IR, generated SQL, SQLite result table, and deterministic error suggestions.
+
 4. Run the test suite:
 
 ```powershell
