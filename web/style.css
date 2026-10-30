@@ -7,12 +7,18 @@ main { width: min(1100px, 92vw); margin: 0 auto; padding: 3.5rem 0 5rem; }
 h1 { font-size: clamp(2.6rem, 7vw, 5.5rem); margin: .25rem 0; }
 h2 { margin-top: 0; font-size: 1.05rem; color: #72e9ee; }
 p { line-height: 1.6; }
-.query-panel, article, .status { background: #0a2a48dd; border: 1px solid #276887; border-radius: 16px; padding: 1.4rem; margin-top: 1.5rem; }
+.query-panel, .upload-panel, article, .status { background: #0a2a48dd; border: 1px solid #276887; border-radius: 16px; padding: 1.4rem; margin-top: 1.5rem; }
 label { display: block; font-weight: 700; margin-bottom: .7rem; }
 textarea { width: 100%; resize: vertical; border-radius: 10px; border: 1px solid #4a91a8; background: #041625; color: white; padding: 1rem; font: inherit; }
 .actions { display: flex; gap: .75rem; margin-top: 1rem; flex-wrap: wrap; }
 button { background: #32cbd1; color: #042033; border: 0; border-radius: 9px; padding: .75rem 1rem; font-weight: 700; cursor: pointer; }
 button.secondary { background: transparent; color: #bceff1; border: 1px solid #53bbc3; }
+input[type=file] { display: block; margin: .75rem 0 1rem; color: #dffaff; }
+.schema { margin-top: 1rem; padding: 1rem; border-radius: 10px; background: #061d32; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
+.chips span { border: 1px solid #337e99; background: #103d59; border-radius: 99px; padding: .35rem .6rem; font-size: .86rem; }
+.chips em { color: #8ee5e8; font-style: normal; }
+code { color: #8ee5e8; }
 .hint { color: #b8dce5; font-size: .92rem; }
 .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
 .wide { grid-column: 1 / -1; }
